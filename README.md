@@ -8,7 +8,7 @@ If you want to check the original template in HTML5 and Bootstrap, [click here](
 1. Clone this project
     ```bash
     git clone https://github.com/MuhammadAgungMahardhika/Web-Soil-Investigation-Application
-    cd laravel-mazer
+    cd Web-Soil-Investigation-Application
     ```
 2. Install dependencies
     ```bash

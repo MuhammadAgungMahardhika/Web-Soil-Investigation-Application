@@ -1,5 +1,5 @@
 ## What is this App?
-<p align="center">Web-Soil-Investigation is an application to easily help civil enginering to save and show the result data of soil investigation.</p>
+<p align="center">Web-Soil-Investigation is an application to easily help civil enginering to save and show the result data of soil investigation using Laravel .</p>
 
 ## LARAVEL
 ## Main Template

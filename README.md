@@ -1,6 +1,7 @@
 ## What is this App?
 <p align="center">Web-Soil-Investigation is an application to easily help civil enginering to save and show the result data of soil investigation.</p>
 
+## LARAVEL
 ## Main Template
 If you want to check the original template in HTML5 and Bootstrap, [click here](https://github.com/zuramai/mazer) to open template repository.
 

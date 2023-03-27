@@ -22,7 +22,8 @@ class SondirController extends Controller
             'data' => $data
 
         ];
-        return view('terms', $send);
+
+        return view('sondir', $send);
     }
 
     /**

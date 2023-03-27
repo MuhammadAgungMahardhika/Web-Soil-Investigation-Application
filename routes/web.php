@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\SondirController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,9 +20,9 @@ Route::get('/', function () {
 });
 Route::get('tes', [SondirController::class, 'index']);
 Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
+    Route::get('/dashboard', [ProjectController::class, 'index'])->name('dashboard');
+    Route::get('/detail/{id}', [ProjectController::class, 'detail'])->name('detail');
+    Route::get('/sondir/{id}', [ProjectController::class, 'sondir'])->name('sondir');
     Route::group(['prefix' => 'components', 'as' => 'components.'], function () {
         Route::get('/alert', function () {
             return view('admin.component.alert');

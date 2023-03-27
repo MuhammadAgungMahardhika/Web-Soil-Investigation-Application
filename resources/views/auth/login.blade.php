@@ -4,7 +4,7 @@
         {{-- <div class="auth-logo">
             <a href="/"><img src="{{ asset('/images/logo/logo.png') }}" alt="Logo"></a>
         </div> --}}
-        <h1 class="auth-title">Soil Investigation Information System</h1>
+        <h1 class="auth-title">Sondir Information System</h1>
         <p class="auth-subtitle "></p>
 
         @if (session('status'))

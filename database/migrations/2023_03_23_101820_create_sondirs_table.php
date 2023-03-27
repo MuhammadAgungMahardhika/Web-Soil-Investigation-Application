@@ -20,12 +20,13 @@ class CreateSondirsTable extends Migration
             $table->foreign('project_id')->references('id')->on('projects');
             $table->integer('number');
             $table->dateTime('date')->nullable();
+            $table->text('description')->nullable();
+            $table->string('executor', 25)->nullable();
             $table->string('operator', 25)->nullable();
             $table->integer('capacity')->nullable();
-            $table->text('description')->nullable();
-            $table->string('recommendation')->nullable();
-            $table->float('lat')->nullable();
-            $table->float('lng')->nullable();
+            $table->integer('recommendation')->nullable();
+            $table->float('lat', 10, 6)->nullable();
+            $table->float('lng', 10, 6)->nullable();
             $table->timestamps();
         });
     }

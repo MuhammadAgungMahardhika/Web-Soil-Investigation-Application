@@ -10,6 +10,7 @@
     "production": "mix --production"
   },
   "devDependencies": {
+    "@fontsource/nunito": "^4.5.4",
     "@tailwindcss/forms": "^0.2.1",
     "@tailwindcss/typography": "^0.4.1",
     "alpinejs": "^2.8.2",
@@ -19,7 +20,6 @@
     "laravel-mix": "^6.0.49",
     "lodash": "^4.17.21",
     "perfect-scrollbar": "^1.5.1",
-    "@fontsource/nunito": "^4.5.4",
     "postcss": "^8.4.14",
     "postcss-import": "^14.1.0",
     "resolve-url-loader": "^3.1.4",
@@ -28,7 +28,8 @@
     "tailwindcss": "^2.2.19"
   },
   "dependencies": {
-    "bootstrap-icons": "^1.9.0"
+    "bootstrap-icons": "^1.9.0",
+    "datatables.net-editor": "^2.1.0"
   },
   "name": "laravel-mazer",
   "description": "![Image](https://raw.githubusercontent.com/zuramai/laravel-mazer/main/screenshot.png)\r <h1 align=\"center\">Mazer + Laravel Jetstream</h1>\r <p align=\"center\">Mazer is a Admin Dashboard Template that can help you develop faster. We bring Mazer with Laravel starter project. It's completely free and you can use it in your projects.</p>",

@@ -20,7 +20,6 @@ class CreateResultsTable extends Migration
             $table->float('depth');
             $table->float('nk');
             $table->float('hp');
-            $table->float('jhp');
             $table->timestamps();
         });
     }

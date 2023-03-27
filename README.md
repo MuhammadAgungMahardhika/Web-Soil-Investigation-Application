@@ -1,6 +1,7 @@
-![Image](https://raw.githubusercontent.com/zuramai/laravel-mazer/main/screenshot.png)
-<h1 align="center">Mazer + Laravel Jetstream</h1>
-<p align="center">Mazer is a Admin Dashboard Template that can help you develop faster. We bring Mazer with Laravel starter project. It's completely free and you can use it in your projects.</p>
+## What is this App?
+<p align="center">Web-Soil-Investigation is an application to easily help civil enginering to save and show the result data of soil investigation using Laravel .</p>
+
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 ## Main Template
 If you want to check the original template in HTML5 and Bootstrap, [click here](https://github.com/zuramai/mazer) to open template repository.
@@ -8,8 +9,8 @@ If you want to check the original template in HTML5 and Bootstrap, [click here](
 ## Installation
 1. Clone this project
     ```bash
-    git clone https://github.com/zuramai/laravel-mazer
-    cd laravel-mazer
+    git clone https://github.com/MuhammadAgungMahardhika/Web-Soil-Investigation-Application
+    cd Web-Soil-Investigation-Application
     ```
 2. Install dependencies
     ```bash
@@ -47,6 +48,5 @@ If you want to check the original template in HTML5 and Bootstrap, [click here](
 **Email:** user@gmail.com
 
 **Password:** password
-## Contributing
-Feel free to contribute and make a pull request.
-# Web-Soil-Investigation-Application
+
+

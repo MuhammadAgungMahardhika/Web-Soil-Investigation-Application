@@ -5,13 +5,13 @@ let lng = 100.5977331;
 let userPosition, userMarker, directionsRenderer, infoWindow, circle, map;
 let markerArray = [];
 let selectedShape, selectedMarker, drawingManager, dataLayer;
-let mapStyles = [
-    {
-        featureType: "poi",
-        elementType: "labels",
-        stylers: [{ visibility: "off" }],
-    },
-];
+// let mapStyles = [
+//     {
+//         featureType: "poi",
+//         elementType: "labels",
+//         stylers: [{ visibility: "off" }],
+//     },
+// ];
 
 function initMap() {
     showMap(); //show map , polygon, legend
@@ -24,7 +24,6 @@ function showMap() {
         center: { lat: lat, lng: lng },
         zoom: 12,
         clickableIcons: false,
-        styles: mapStyles,
     });
     // remove unecessary button when in mobile
     if (window.location.pathname.split("/").pop() == "mobile") {
@@ -58,6 +57,7 @@ function showInfoOnMap(data, url) {
         title: "info marker",
         map: map,
     });
+    moveCamera(14);
     markerArray.push(objectMarker);
     objectMarker.addListener("click", () => {
         openInfoWindow(objectMarker, infoMarkerData(data, url));
@@ -247,9 +247,16 @@ function infoMarkerData(data, url) {
     let lng = data.lng;
     let infoMarker;
 
-    infoMarker = `<div class="text-center mb-1">Sondir : ${number}</div><div class="col-md text-center" id="infoWindowDiv" ><div class="text-center mb-1">Recom : ${
-        recom == 1 ? "(Bor Pile) Pondasi Dalam" : "(Sumuran) Pondasi Dangkal"
-    }</div><a role ="button" title ="route here" class="btn btn-outline-primary" onclick ="calcRoute(${lat},${lng})"> <i class ="fa fa-road"> </i></a >`;
+    infoMarker = `<h6 class="text-center mb-2">Sondir : ${number}</h6>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">Lat : ${lat}</li>
+        <li class="list-group-item">Lng : ${lng}</li>
+        <li class="list-group-item">
+        Recom :
+        ${recom == 1 ? "(Bor Pile) Pondasi Dalam" : "(Sumuran) Pondasi Dangkal"}
+        </li>
+    </ul>
+    <div class="col-md text-center" id="infoWindowDiv" ><a role ="button" title ="route here" class="btn btn-outline-primary" onclick ="calcRoute(${lat},${lng})"> <i class ="fa fa-road"> </i></a ></div>`;
 
     return infoMarker;
 }

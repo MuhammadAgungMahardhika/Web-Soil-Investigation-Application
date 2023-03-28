@@ -25,8 +25,8 @@ class CreateSondirsTable extends Migration
             $table->string('operator', 25)->nullable();
             $table->integer('capacity')->nullable();
             $table->integer('recommendation')->nullable();
-            $table->float('lat', 10, 6)->nullable();
-            $table->float('lng', 10, 6)->nullable();
+            $table->decimal('lat', 12, 8)->nullable();
+            $table->decimal('lng', 12, 8)->nullable();
             $table->timestamps();
         });
     }

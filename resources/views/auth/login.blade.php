@@ -1,9 +1,9 @@
 <x-guest-layout>
 
     <div id="auth-left">
-        {{-- <div class="auth-logo">
+        <div class="auth-logo" style="margin-bottom: 0px">
             <a href="/"><img src="{{ asset('/images/logo/logo.png') }}" alt="Logo"></a>
-        </div> --}}
+        </div>
         <h1 class="auth-title">Sondir Information System</h1>
         <p class="auth-subtitle "></p>
 

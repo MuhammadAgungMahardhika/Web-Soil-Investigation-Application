@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 Route::get('tes', [SondirController::class, 'index']);
 Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
